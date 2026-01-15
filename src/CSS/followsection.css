@@ -1,0 +1,63 @@
+
+.follow-section {
+  margin: 75px 0 25px 0;
+  width: 100%;
+  height: 500px; /* adjust as needed */
+  background-image: url("../../src/assets/FollowUs.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* NO CROP */
+}
+
+.follow-box {
+    padding: 130px 0 0 100px;
+}
+
+.follow-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: normal !important;
+    letter-spacing: -0.8px;
+    text-align: left;
+    font-size: 35px;
+    color: white;
+}
+
+.follow-sub-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: white;
+}
+
+.follow-button {
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  padding: 20px 36px;
+  border-radius: 50px;
+
+  background-color: var(--accent-primary);
+  color: #ffffff;
+
+  border: none;
+  cursor: pointer;
+
+  transition: 
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.follow-button:hover {
+  background-color: #ffffff; /* or darker accent */
+  color: var(--accent-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}

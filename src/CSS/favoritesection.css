@@ -1,0 +1,251 @@
+/* SECTION WRAPPER */
+.favorites-section {
+  margin: 50px 0 25px 0;
+  background-color: var(--bg-root); /* dark neutral root background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;             /* centers all content horizontally */
+  text-align: center;
+}
+
+/* SECTION HEADING */
+.favorites {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 36px;                 /* professional heading */
+  margin: 0;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+/* SECTION SUBTITLE */
+.fav-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-top: 10px;
+  max-width: 650px;               /* ensures two-line wrap */
+}
+
+/* CARDS CONTAINER */
+.favorites-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 5px;
+  justify-items: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;              /* keeps cards centered on large screens */
+}
+
+/* INDIVIDUAL CARD */
+.homepagecard-favorites {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* BLACK FADING OVERLAY */
+.image-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.326) 100%
+  );
+  pointer-events: none;
+}
+
+/* CARD IMAGE */
+.homepagecard-favorites .favorites-image {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  object-fit: cover;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: transform .45s ease, filter .45s ease;
+}
+
+/* CARD TITLE */
+.favorites-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  letter-spacing: -0.3px;   /* tight, premium feel */
+  line-height: 1.15;        /* compact without crowding */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transform: translateY(60%); /* moves title down inside the card */
+  transition: color 0.3s ease, transform 0.3s ease;
+  width: 70%;
+  transform-origin: center;
+  position: absolute;
+  bottom: 15px;
+}
+
+.homepagecard-favorites:hover .favorites-image{
+  transform: scale(1.08);
+  filter: saturate(1.05);
+}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .favorites {
+    font-size: 28px;
+    margin-top: 60px;
+  }
+
+  .fav-text {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .homepagecard-favorites .favorites-title {
+    font-size: 18px;
+  }
+}
+
+
+
+/*
+  .homepage-card .homepagecard-text {
+  font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  margin: -15px 0 20px 15px;
+  color: #000;
+  /*
+  color: #f1f9fab2;
+
+  margin-right: 50px;
+  justify-content: right; /* centers items in every row 
+
+
+.dropping-texts {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+  height: 36px;
+  vertical-align: 0px;
+}
+
+.dropping-texts > div {
+  opacity:0;
+  position:absolute;
+  font-weight:900;   
+}
+
+.dropping-texts > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.dropping-texts > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size:0px;
+    opacity:0.5;
+    margin-left:20px;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  30% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  37% {
+    font-size:0px;
+    opacity:0;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  100% {
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}  
+
+/* CARD HOVER
+.homepagecard-favorites:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
+  
+*/

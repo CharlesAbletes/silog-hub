@@ -1,0 +1,65 @@
+
+.hero-banner {
+  width: 100%;               /* Full width */
+  height: 100vh;              /* Almost full viewport height */
+  background-image: url("../assets/HomepageBG2.png");
+  background-size: cover;    /* Cover entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  margin-left: 100px;
+  color: white;
+}
+
+.overlay h1{
+  font-family: 'Ubuntu', sans-serif;
+  /*font-family: 'Cherry Swash', cursive;*/
+  margin: 0;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 2px;
+  color: #FAFAFA;
+}
+
+.overlay button {
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  padding: 14px 36px;
+  border-radius: 50px;
+
+  background-color: var(--accent-primary);
+  color: #ffffff;
+
+  border: none;
+  cursor: pointer;
+
+  transition: 
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.overlay button:hover {
+  background-color: #ffffff; /* or darker accent */
+  color: var(--accent-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+.hero-banner button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
