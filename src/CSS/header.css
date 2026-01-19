@@ -1,5 +1,22 @@
+/* Wrapper */
+.site-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
-header {
+.site-header.is-sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+/* ===== TOPMOST (UNCHANGED LOOK) ===== */
+.header-top{
   display: flex;
   width: 100%;
   color: white;
@@ -11,27 +28,28 @@ header {
   left: 0;
 
   padding: 0;
-  z-index: 10;
-
   background: transparent;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 
-.brand-name {
-  margin: 0;          /* important */
+
+.brand-name{
+  margin: 0;
   display: flex;
   align-items: center;
   padding-left: 60px;
 }
 
-.brand-name img {
-  height: 55px;        /* ideal navbar logo height */
+.brand-name img{
+  height: 55px;
   margin-top: -5px;
-  width: auto;         /* keeps original aspect ratio */
-  object-fit: contain; /* ensures image fits without distortion */
-  display: block;      /* prevents extra inline spacing */
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
-nav ul {
+.main-nav ul{
   display: flex;
   align-items: center;
   margin-right: 130px;
@@ -41,65 +59,74 @@ nav ul {
   position: relative;
 }
 
-nav li a {
+.main-nav li a{
   position: relative;
   display: inline-block;
   padding-bottom: 6px;
   text-decoration: none;
 }
 
-nav a {
-  /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Ubuntu', sans-serif;
+.main-nav a{
+  font-family: "Ubuntu", sans-serif;
   color: white;
-  font-size: 18px;          /* sweet spot for desktop */
-  font-weight: 300;         /* clean, readable, not bulky */
-  letter-spacing: 0.6px;    /* professional spacing */
-  /*text-transform: uppercase; /* optional but looks strong */
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
   text-decoration: none;
 }
 
-nav ul li a::after {
+.main-nav ul li a::after{
   content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: black;
+  background: white;
 
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
   transition: transform 0.25s ease-out;
 }
 
-nav ul li a:hover::after {
+.main-nav ul li a:hover::after{
   transform: translateX(-50%) scaleX(1);
 }
 
-@media (max-width: 768px) {
-  .brand-name img {
-    height: 36px;      /* smaller logo on mobile */
+/* ===== STICKY (ONLY ON SCROLL) ===== */
+.header-sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 14px 24px;
+  background: #b2815f;
+}
+
+.sticky-logo{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky-logo img{
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .brand-name img{
+    height: 36px;
+  }
+  .sticky-logo img{
+    height: 34px;
   }
 }
-
-/*
-  background-color: #f77f00;
-
-
-.brand-elegant {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px; /* elegant, slightly smaller
-  font-weight: light;
-  letter-spacing: -0.5px;
-}
-
-.brand-bold {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px; /* slightly bigger for emphasis 
-  font-weight: bold;
-  letter-spacing: -2px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.15); /* subtle lift */
-  /* fine-tune vertical alignment if needed
-}
-*/

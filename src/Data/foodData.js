@@ -1,15 +1,11 @@
-import tapsilogPic from './assets/Tapsilog.jpg'
-import longsilogPic from './assets/Longsilog.jpg'
-import bisteksilogPic from './assets/Bisteksilog.jpg'
-import cornsilogPic from './assets/Cornsilog.jpg'
-import bangsilogPic from './assets/Bangsilog.jpg'
-import chicksilogPic from './assets/Chicksilog.jpg'
-import bangustinapaPic from './assets/Bangustinapa.jpg'
-import danggitsilogPic from './assets/Danggitsilog.jpg'
-import Card from './Components/Cards/Card.jsx'
-import './CSS/card.css'
-
-function Food(){
+import tapsilogPic from '../assets/Tapsilog.jpg'
+import longsilogPic from '../assets/Longsilog.jpg'
+import bisteksilogPic from '../assets/Bisteksilog.jpg'
+import cornsilogPic from '../assets/Cornsilog.jpg'
+import bangsilogPic from '../assets/Bangsilog.jpg'
+import chicksilogPic from '../assets/Chicksilog.jpg'
+import bangustinapaPic from '../assets/Bangustinapa.jpg'
+import danggitsilogPic from '../assets/Danggitsilog.jpg'
 
     const foodsData = [
         {
@@ -62,21 +58,7 @@ function Food(){
         }
     ];
 
-    return (
-        <div className = "card-container">
-            {foodsData.map(foodsDetails => (
-                <Card
-                    image = {foodsDetails.image}
-                    title = {foodsDetails.title}
-                    text = {foodsDetails.text}
-                    key = {foodsDetails.id}
-                />
-            ))}
-        </div>
-    );
-}
-
- export default Food
+ export default foodsData;
 
  /*
        <ul>

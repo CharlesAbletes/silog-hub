@@ -1,0 +1,131 @@
+.feedback-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 10%;
+  gap: 40px;
+}
+
+/* Left column */
+.feedback-left {
+  width: 600px;   /* fixed width */
+  height: 400px;  /* fixed height */
+  flex: none;     /* prevent flex-grow and flex-shrink */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* instead of space-between */
+  gap: 12px; /* optional spacing between elements */
+}
+
+.feedback-stars {
+  font-size: 25px;
+  letter-spacing: 0.25em;
+  opacity: 0.9;
+}
+
+.feedback-title {
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  font-size: 3.3rem;
+  font-weight: 900;
+  color: black; /* #8b5e3c; brown accent */
+  margin: 0;              /* remove default margin */
+
+  white-space: normal; /* allow wrapping */
+  word-break: break-word; /* break long words if needed */
+  overflow-wrap: break-word; /* safely break words */
+}
+
+.feedback-comment {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: black;
+  margin: 0;              /* remove default margin */
+}
+
+.feedback-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;              /* remove default margin */
+}
+
+/* Buttons */
+.feedback-buttons {
+  display: flex;
+  gap: 24px;
+  margin-top: auto;  /* pushes buttons to the bottom */
+}
+
+.feedback-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.feedback-buttons button:hover {
+  transform: scale(1.1);
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/* Right column */
+.feedback-right {
+  width: 500px;   /* fixed width */
+  height: 400px;  /* fixed height */
+  flex: none;     /* prevent flex-grow and flex-shrink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-image {
+  width: 130%;
+  border-radius: 5px;
+  max-width: 1000px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feedback-section {
+    flex-direction: column;
+    padding: 60px 5%;
+  }
+
+  .feedback-left,
+  .feedback-right {
+    flex: 1 1 100%;
+  }
+
+  .feedback-right {
+    margin-top: 30px;
+  }
+
+  .feedback-buttons button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .feedback-title {
+    font-size: 2.2rem;
+  }
+
+  .feedback-comment {
+    font-size: 1rem;
+  }
+}

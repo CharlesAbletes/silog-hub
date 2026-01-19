@@ -5,7 +5,7 @@ function HomePageCardFavorites({ image, title }) {
     return (
         <div className="homepagecard-favorites">
             <img className="favorites-image" src={image} alt={title} />
-            <div className="image-fade"></div>
+            <div className="favorites-image-fade"></div>
 
             <h2 className="favorites-title">{title}</h2>
         </div>

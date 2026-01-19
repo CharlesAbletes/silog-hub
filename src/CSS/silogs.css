@@ -1,0 +1,12 @@
+
+.page-content {
+    padding: 100px;
+}
+.card-container {
+  display: flex;
+  justify-content: center; /* centers items in every row */
+  flex-wrap: wrap;         /* allow wrapping */
+  gap: 50px; 
+  row-gap: 5px; 
+}
+

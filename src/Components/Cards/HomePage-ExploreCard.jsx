@@ -5,7 +5,7 @@ function HomePageCardExplore({ image, title}) {
     return (
         <div className = "homepagecard-explore">
             <img className="explore-image" src={image} alt={title}></img>
-            <div class="explore-title">{title}</div>
+            <div className="explore-title">{title}</div>
         </div>
     );
 }

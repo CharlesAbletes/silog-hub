@@ -1,7 +1,6 @@
 /* SECTION WRAPPER */
 .explore-section {
-  margin: 50px 0 25px 0;
-  background-color: var(--bg-root); /* dark neutral root background */
+  margin: 30px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;             /* centers all content horizontally */
@@ -54,6 +53,10 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+
+  border-style: solid; /* Required for the border to be visible */
+  border-width: 1px;
+  border-color: black; /* Sets all four borders to red */
 }
 
 /* CARD IMAGE */
@@ -73,7 +76,7 @@
   font-size: 25px;
   font-weight: 600;
   color: white;
-  letter-spacing: -0.3px;
+  letter-spacing: -1px;
   line-height: 1.15;
   left: 50%;
   width: 150%;

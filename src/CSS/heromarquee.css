@@ -1,0 +1,47 @@
+
+/* Marquee bar */
+.hero-marquee {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: #b0805e;
+  overflow: hidden;
+  padding: 2px 0;
+  backdrop-filter: blur(6px);
+}
+
+.marquee-track {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  white-space: pre;
+  font-size: 20px;
+  letter-spacing: 4px;
+  -webkit-text-stroke: 0.2px #000;   /* border color */
+
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.hero-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.inline-symbol {
+  width: 28px;         /* adjust size */
+  height: 25px;
+  vertical-align: middle; /* aligns with text line */
+  margin: 4px 3px;       /* spacing from words */
+}
+
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

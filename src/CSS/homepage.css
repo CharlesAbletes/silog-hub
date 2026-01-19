@@ -17,7 +17,7 @@
   color: white;
 }
 
-.overlay h1{
+.overlay .overlay-text{
   font-family: 'Ubuntu', sans-serif;
   /*font-family: 'Cherry Swash', cursive;*/
   margin: 0;

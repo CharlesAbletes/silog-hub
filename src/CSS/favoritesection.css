@@ -1,6 +1,6 @@
 /* SECTION WRAPPER */
 .favorites-section {
-  margin: 50px 0 25px 0;
+  margin: 25px 0 0 0;
   background-color: var(--bg-root); /* dark neutral root background */
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 36px;                 /* professional heading */
-  margin: 0;
+  margin: 5px;
   color: var(--text-primary);
   letter-spacing: -0.5px;
 }
@@ -54,10 +54,14 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+
+  border-style: solid; /* Required for the border to be visible */
+  border-width: 1px;
+  border-color: black; /* Sets all four borders to red */
 }
 
 /* BLACK FADING OVERLAY */
-.image-fade {
+.favorites-image-fade {
   position: absolute;
   inset: 0;
   background: linear-gradient(
