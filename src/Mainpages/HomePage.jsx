@@ -37,10 +37,3 @@ function HomePage() {
 }
 
 export default HomePage
-
-/*
-<p className="favorites">The Favorites</p>
-            <h1 className="exploremenu">Explore Our Menu</h1>
-
-
-*/

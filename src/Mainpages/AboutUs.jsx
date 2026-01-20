@@ -1,4 +1,3 @@
-import Header from '../Header.jsx'
 import PlaceholderPage from '../Components/PlaceholderPage'
 
 function AboutUs() {

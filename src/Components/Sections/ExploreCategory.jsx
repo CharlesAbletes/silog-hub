@@ -1,8 +1,8 @@
 import { nanoid } from "nanoid"
 
-import Silogs from '../../assets/Silogs.png'
-import ComboMeals from '../../assets/ComboMeals.png'
-import FamilyPacks from '../../assets/FamilyPacks.png'
+import Silogs from '../../assets/silogs.png'
+import ComboMeals from '../../assets/combo_meals.png'
+import FamilyPacks from '../../assets/family_packs.png'
 import HomePageCardExplore from '../Cards/HomePage-ExploreCard.jsx'
 import '../../CSS/exploresection.css'
 

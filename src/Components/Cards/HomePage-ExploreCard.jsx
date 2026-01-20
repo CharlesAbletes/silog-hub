@@ -11,7 +11,3 @@ function HomePageCardExplore({ image, title}) {
 }
 
 export default HomePageCardExplore
-
-/*
- <h2 className="explore-title">{title}</h2>
-*/

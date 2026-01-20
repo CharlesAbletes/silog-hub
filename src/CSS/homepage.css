@@ -2,7 +2,7 @@
 .hero-banner {
   width: 100%;               /* Full width */
   height: 100vh;              /* Almost full viewport height */
-  background-image: url("../assets/HomepageBG2.png");
+  background-image: url("../assets/homepage_BG_2.png");
   background-size: cover;    /* Cover entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -19,7 +19,6 @@
 
 .overlay .overlay-text{
   font-family: 'Ubuntu', sans-serif;
-  /*font-family: 'Cherry Swash', cursive;*/
   margin: 0;
   font-size: 58px;
   font-weight: 500;

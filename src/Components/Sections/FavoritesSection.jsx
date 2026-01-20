@@ -1,9 +1,9 @@
 import { nanoid } from "nanoid"
 
-import tapsilogPic from '../../assets/Tapsilog.jpg'
-import longsilogPic from '../../assets/Longsilog.jpg'
-import chicksilogPic from '../../assets/Chicksilog.jpg'
-import bangustinapaPic from '../../assets/Bangustinapa.jpg'
+import tapsilogPic from '../../assets/tapsilog.jpg'
+import longsilogPic from '../../assets/longsilog.jpg'
+import chicksilogPic from '../../assets/chicksilog.jpg'
+import bangustinapaPic from '../../assets/bangustinapa.jpg'
 import HomePageCardFavorites from '../Cards/HomePage-FavoritesCard.jsx'
 import '../../CSS/favoritesection.css'
 
@@ -54,31 +54,3 @@ function Favorites(){
 }
 
  export default Favorites
-
- /*
-    return (
-            <div className="homepage-section">
-                <h1 className = "favorites">Our Favorites</h1>
-                <p className = "fav-text">Take a look at the top picks from our customers — <br />
-                    each dish is carefully prepared and always served with the best silog in town! </p>
-            
-                <div className = "homepagecard-container">
-                    {foodsData.map(foodsDetails => (
-                        <HomePageCard
-                            image = {foodsDetails.image}
-                            title = {foodsDetails.title}
-                            text = {foodsDetails.text}
-                            key = {foodsDetails.id}
-                        />
-                    ))}
-                </div>
-            </div>
-        );
-
-                     <div class="dropping-texts">
-                        <div>Must-Trys</div>
-                        <div>All-Day <br/> Favorites</div>
-                        <div>Breakfast <br/> Hits</div>
-                        <div>Silog <br/> Classics</div>
-                    </div>
- */

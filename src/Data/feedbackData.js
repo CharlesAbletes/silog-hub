@@ -1,13 +1,13 @@
-import victoria from '../assets/Bangsilog.jpg'
-import cole from '../assets/Bangustinapa.jpg'
-import vanessa from '../assets/Bisteksilog.jpg'
-import susan from '../assets/Chicksilog.jpg'
-import kenji from '../assets/Cornsilog.jpg'
-import zeke from '../assets/Danggitsilog.jpg'
-import ryan from '../assets/Longsilog.jpg'
-import aion from '../assets/Bisteksilog.jpg'
-import darren from '../assets/Cornsilog.jpg'
-import andy from '../assets/Tapsilog.jpg'
+import victoria from '../assets/bangsilog.jpg'
+import cole from '../assets/bangustinapa.jpg'
+import vanessa from '../assets/bisteksilog.jpg'
+import susan from '../assets/chicksilog.jpg'
+import kenji from '../assets/cornsilog.jpg'
+import zeke from '../assets/danggitsilog.jpg'
+import ryan from '../assets/longsilog.jpg'
+import aion from '../assets/bisteksilog.jpg'
+import darren from '../assets/cornsilog.jpg'
+import andy from '../assets/tapsilog.jpg'
 
 const feedbacks = [
   {

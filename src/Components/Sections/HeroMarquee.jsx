@@ -1,5 +1,5 @@
 import '../../CSS/heromarquee.css'
-import sparkle from '../../assets/sparkle-icon-big.png'
+import sparkle from '../../assets/sparkle_icon_big.png'
 
 function HeroMarquee() {
   return (

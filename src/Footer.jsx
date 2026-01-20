@@ -9,7 +9,7 @@ function Footer() {
           <a className="brand-link" href="/" aria-label="Home">
             <img
               className="brand-logo"
-              src="/siloghub_logo_4k - white.png"
+              src="/siloghub_logo_4k_white.png"
               alt="Your Brand"
               loading="lazy"
             />

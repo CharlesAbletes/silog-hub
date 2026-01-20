@@ -25,10 +25,7 @@
   border-style: solid; /* Required for the border to be visible */
   border-width: 1px;
   border-color: black; /* Sets all four borders to red */
-  /*
-  background: #cc6002a4;
-  color: #f1f9fa;
-  */
+
   transition: transform 0.3s ease;
 }
 
@@ -110,15 +107,3 @@
     transform: translateY(0);
   }
 }
-
-/*
-.card-inner:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-  transition: 0.3s ease;
-}
-
-  /*
-  color: #f1f9fab2;
-
-*/

@@ -24,7 +24,7 @@ function Header() {
       {!isSticky && (
         <div className="header-top">
           <h1 className="brand-name">
-            <img src="/siloghub_logo_4k - white.png" alt="Silog Hub logo" />
+            <img src="/siloghub_logo_4k_white.png" alt="Silog Hub logo" />
           </h1>
 
           <nav className="main-nav">
@@ -43,7 +43,7 @@ function Header() {
       {isSticky && (
         <div className="header-sticky">
           <NavLink to="/" className="sticky-logo" aria-label="Silog Hub home">
-            <img src="/siloghub_logo_4k - white.png" alt="Silog Hub logo" />
+            <img src="/siloghub_logo_4k_white.png" alt="Silog Hub logo" />
           </NavLink>
         </div>
       )}

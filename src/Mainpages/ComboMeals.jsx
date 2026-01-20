@@ -1,4 +1,3 @@
-import Header from '../Header'
 import PlaceholderPage from '../Components/PlaceholderPage'
 
 function ComboMeals() {
