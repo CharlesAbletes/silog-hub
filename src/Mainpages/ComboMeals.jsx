@@ -1,10 +1,13 @@
 import Header from '../Header'
+import PlaceholderPage from '../Components/PlaceholderPage'
 
 function ComboMeals() {
     return (
-        <>
-            <Header />
-        </>
+        <PlaceholderPage
+            title="Combo Meals"
+            note="Combos are being finalised, check back soon."
+            backTo="/"
+        />
     )
 }
 

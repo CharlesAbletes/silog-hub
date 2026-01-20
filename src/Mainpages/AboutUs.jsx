@@ -1,10 +1,13 @@
 import Header from '../Header.jsx'
+import PlaceholderPage from '../Components/PlaceholderPage'
 
 function AboutUs() {
     return(
-        <>
-            <Header />
-        </>
+        <PlaceholderPage
+            title="About Us"
+            note="About Us are being finalised, check back soon."
+            backTo="/"
+        />
     )
 }
 
