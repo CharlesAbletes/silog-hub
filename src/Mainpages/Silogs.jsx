@@ -1,5 +1,5 @@
-import Header from '../Header.jsx'
-import Footer from '../Footer.jsx'
+import Header from '../Components/Header.jsx'
+import Footer from '../Components/Footer.jsx'
 import foodsData from '../Data/foodData.js'
 import Card from '../Components/Cards/Card.jsx'
 import '../CSS/card.css'

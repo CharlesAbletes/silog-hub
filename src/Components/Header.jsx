@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./CSS/header.css";
+import "../CSS/header.css";
 
 function Header() {
   const [isSticky, setIsSticky] = useState(false);

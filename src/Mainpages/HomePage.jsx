@@ -1,4 +1,4 @@
-import Header from '../Header.jsx'
+import Header from '../Components/Header.jsx'
 import Favorites from '../Components/Sections/FavoritesSection.jsx'
 import FollowUs from '../Components/Sections/FollowSection.jsx'
 import ExploreCategory from '../Components/Sections/ExploreCategory.jsx'
@@ -6,7 +6,7 @@ import '../CSS/homepage.css'
 import { NavLink } from "react-router-dom"
 import HeroMarquee from '../Components/Sections/HeroMarquee.jsx'
 import FeedbackSection from '../Components/Sections/FeedBackSection.jsx'
-import Footer from '../Footer.jsx'
+import Footer from '../Components/Footer.jsx'
 
 function HomePage() {
     return (
