@@ -7,11 +7,11 @@
   font-weight: 400;
 
     /* backgrounds #F5F5F5 #faf3dd */
-  --bg-root: white;
+  --bg-root: #372C2E;
 
   /* text */
-  --text-primary: black;
-  --text-secondary: #757373;
+  --text-primary: #ffffff;
+  --text-secondary: #c6c6c6;
 
   /* accent */
   --accent-primary: #F77F00;

@@ -28,7 +28,7 @@
   font-family: 'Ubuntu', sans-serif;
   letter-spacing: -1px;
   text-transform: uppercase;
-  font-size: 3.3rem;
+  font-size: 42px;
   font-weight: 900;
   color: --text-primary; /* #8b5e3c; brown accent */
   margin: 0;              /* remove default margin */
@@ -40,14 +40,14 @@
 
 .feedback-comment {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.2rem;
+  font-size: 17px;
   line-height: 1.6;
   color: --text-primary;
   margin: 0;              /* remove default margin */
 }
 
 .feedback-name {
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 700;
   color: --text-primary;
   margin: 0;              /* remove default margin */
@@ -64,9 +64,9 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid var(--text-primary);
   background-color: transparent;
-  color: black;
+  color: var(--text-primary);
   font-size: 2rem;
   font-weight: 300;
   cursor: pointer;
@@ -78,8 +78,8 @@
 
 .feedback-buttons button:hover {
   transform: scale(1.1);
-  background-color: black;
-  color: white;
+  background-color: var(--text-primary);
+  color: #000000;
 }
 
 /* Right column */

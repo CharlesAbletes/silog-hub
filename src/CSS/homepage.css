@@ -20,10 +20,10 @@
 .overlay .overlay-text{
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  font-size: 58px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.15;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #FAFAFA;
 }
 
@@ -35,7 +35,7 @@
   letter-spacing: 0.8px;
   text-transform: uppercase;
 
-  padding: 14px 36px;
+  padding: 14px 28px;
   border-radius: 50px;
 
   background-color: var(--accent-primary);
