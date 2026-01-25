@@ -31,9 +31,9 @@ function Header() {
             <ul>
               <li className="homepage"><NavLink to="/">Home Page</NavLink></li>
               <li className="silogs"><NavLink to="/silogs">Silogs</NavLink></li>
-              <li className="combomeals"><NavLink to="/combomeals">Combo Meals</NavLink></li>
-              <li className="familypacks"><NavLink to="/familypacks">Family Packs</NavLink></li>
-              <li className="aboutus"><NavLink to="/aboutus">About Us</NavLink></li>
+              <li className="combomeals"><NavLink to="/combo-meals">Combo Meals</NavLink></li>
+              <li className="familypacks"><NavLink to="/family-packs">Family Packs</NavLink></li>
+              <li className="aboutus"><NavLink to="/about-us">About Us</NavLink></li>
             </ul>
           </nav>
         </div>

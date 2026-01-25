@@ -79,7 +79,7 @@
 .feedback-buttons button:hover {
   transform: scale(1.1);
   background-color: var(--text-primary);
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Right column */

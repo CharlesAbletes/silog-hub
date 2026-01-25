@@ -6,12 +6,12 @@
   line-height: 1.5;
   font-weight: 400;
 
-    /* backgrounds #F5F5F5 #faf3dd */
-  --bg-root: #372C2E;
+    /* backgrounds #F5F5F5 #faf3dd #372C2E*/
+  --bg-root: #ffffff;
 
   /* text */
-  --text-primary: #ffffff;
-  --text-secondary: #c6c6c6;
+  --text-primary: #000000;
+  --text-secondary: #777777;
 
   /* accent */
   --accent-primary: #F77F00;

@@ -55,9 +55,11 @@
   position: relative;
   overflow: hidden;
 
-  border-style: solid; /* Required for the border to be visible */
+  /*
+  border-style: solid; /* Required for the border to be visible
   border-width: 1px;
-  border-color: black; /* Sets all four borders to red */
+  border-color: black; /* Sets all four borders to red
+  */
 }
 
 /* BLACK FADING OVERLAY */
