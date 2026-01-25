@@ -1,3 +1,5 @@
+import { FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa";
+
 import '../CSS/footer.css'
 
 function Footer() {
@@ -6,26 +8,26 @@ function Footer() {
       <div className="footer-inner">
         {/* Left: Logo */}
         <div className="footer-brand">
-          <a className="brand-link" href="/" aria-label="Home">
+          <a className="brand-link" href="/">
             <img
               className="brand-logo"
               src="/siloghub_logo_4k_white.png"
-              alt="Your Brand"
+              alt="Silog Hub logo"
               loading="lazy"
             />
           </a>
 
           <p className="brand-tagline">MADE TO SATISFY</p>
-          <div className="brand-stars" aria-hidden="true">✦ ✦ ✦ ✦ ✦</div>
+          <div className="brand-stars">✦ ✦ ✦ ✦ ✦</div>
         </div>
 
         {/* Middle: Links */}
-        <nav className="footer-nav" aria-label="Footer">
+        <nav className="footer-nav">
           <ul className="footer-links">
-            <li><a href="/our-story">Our Story</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/catering">Catering</a></li>
-            <li><a href="/terms">Terms</a></li>
+            <li><a href="/about-us">Our Story</a></li>
+            <li><a href="/">Find Us</a></li>
+            <li><a href="/">Menu</a></li>
+            <li><a href="/">FAQs</a></li>
           </ul>
         </nav>
 
@@ -46,29 +48,23 @@ function Footer() {
                 autoComplete="email"
                 required
               />
-              <button className="signup-btn" type="submit" aria-label="Subscribe">
-                <span aria-hidden="true">→</span>
+              <button className="signup-btn" type="submit">
+                <span>→</span>
               </button>
             </div>
           </form>
 
-          <div className="footer-social" aria-label="Social links">
-            <a className="social" href="https://instagram.com" aria-label="Instagram" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 4.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2Zm0 2A1.8 1.8 0 1 0 13.8 12 1.8 1.8 0 0 0 12 10.2ZM17.7 6.7a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9Z" />
-              </svg>
+          <div className="footer-social">
+            <a className="social" href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <FaInstagram/>
             </a>
 
-            <a className="social" href="https://facebook.com" aria-label="Facebook" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V5a21 21 0 0 0-2.5-.1c-2.4 0-4.1 1.5-4.1 4.2V11H8v3h2.2v8h3.3Z" />
-              </svg>
+            <a className="social" href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF/>
             </a>
 
-            <a className="social" href="https://tiktok.com" aria-label="TikTok" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M14 3c.4 2.6 2.1 4.4 4.6 4.7v2.7c-1.8 0-3.4-.6-4.6-1.6v6.2c0 3-2.4 5.4-5.4 5.4S3.2 18 3.2 15s2.4-5.4 5.4-5.4c.5 0 1 .1 1.5.2v2.9c-.4-.2-.9-.3-1.5-.3-1.4 0-2.6 1.2-2.6 2.6s1.2 2.6 2.6 2.6 2.6-1.2 2.6-2.6V3h3Z" />
-              </svg>
+            <a className="social" href="https://tiktok.com" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+              <FaTiktok/>
             </a>
           </div>
         </div>

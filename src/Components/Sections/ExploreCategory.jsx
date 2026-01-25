@@ -5,6 +5,7 @@ import ComboMeals from '../../assets/combo_meals.png'
 import FamilyPacks from '../../assets/family_packs.png'
 import HomePageCardExplore from '../Cards/HomePage-ExploreCard.jsx'
 import '../../CSS/exploresection.css'
+import { Link } from "react-router-dom"
 
 function ExploreCategory() {
 
@@ -13,16 +14,19 @@ function ExploreCategory() {
                 id: nanoid(),
                 image: Silogs,
                 title: "Silogs",
+                path: "/silogs"
             },
             {
                 id: nanoid(),
                 image: ComboMeals,
                 title: "Combo Meals",
+                path: "/combo-meals"
             },
             {
                 id: nanoid(),
                 image: FamilyPacks,
                 title: "Family Packs",
+                path: "/family-packs"
             }
         ];
 
@@ -35,11 +39,15 @@ function ExploreCategory() {
 
             <div className = "explore-container ">
                 {exploreMenu.map(Menus => (
-                    <HomePageCardExplore
-                        image = {Menus.image}
-                        title = {Menus.title}
+                    <Link
                         key = {Menus.id}
-                    />
+                        to = {Menus.path}
+                    >
+                        <HomePageCardExplore
+                            image = {Menus.image}
+                            title = {Menus.title}
+                        />
+                    </Link>
                 ))}
             </div>
         </div>

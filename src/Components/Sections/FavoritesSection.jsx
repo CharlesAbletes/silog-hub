@@ -1,11 +1,14 @@
 import { nanoid } from "nanoid"
+import { Link } from "react-router-dom";
 
-import tapsilogPic from '../../assets/tapsilog.jpg'
-import longsilogPic from '../../assets/longsilog.jpg'
-import chicksilogPic from '../../assets/chicksilog.jpg'
-import bangustinapaPic from '../../assets/bangustinapa.jpg'
+import tapsilogPic from '../../assets/tapsilog_torn.png'
+import longsilogPic from '../../assets/longsilog_torn.png'
+import chicksilogPic from '../../assets/chicksilog_torn.png'
+import bangustinapaPic from '../../assets/bangustinapa_torn.png'
 import HomePageCardFavorites from '../Cards/HomePage-FavoritesCard.jsx'
+
 import '../../CSS/favoritesection.css'
+
 
 function Favorites(){
 
@@ -42,11 +45,15 @@ function Favorites(){
         
             <div className = "favorites-container">
                 {foodsData.map(foodsDetails => (
-                    <HomePageCardFavorites
-                        image = {foodsDetails.image}
-                        title = {foodsDetails.title}
-                        key = {foodsDetails.id}
-                    />
+                    <Link
+                    key = {foodsDetails.id}
+                    to="/silogs"
+                    >
+                        <HomePageCardFavorites
+                            image = {foodsDetails.image}
+                            title = {foodsDetails.title}
+                        />
+                    </Link>
                 ))}
             </div>
         </div>

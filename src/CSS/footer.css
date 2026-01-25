@@ -1,6 +1,6 @@
 .site-footer {
   max-width: 1300px;
-  margin: 0 auto;   /* centres it */
+  margin: 0 auto;
   margin-bottom: 15px;
   background: #b2815f;
   color: #ffffff;
@@ -14,44 +14,42 @@
   margin: 0 auto;
   display: grid;
 
-  grid-template-columns: minmax(220px, 340px) auto minmax(280px, 420px);
+  grid-template-columns: 
+  minmax(220px, 340px)
+  auto               
+  minmax(280px, 420px);
   justify-content: center;
   column-gap: 50px;
   align-items: center;
 }
 
 .footer-brand {
-  max-width: 340px;   /* adjust: 280px to 380px */
+  max-width: 340px;  
   justify-self: center;
   text-align: center;
 }
 
 .brand-link {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
 
 .brand-logo {
-  width: min(340px, 100%);  /* adjust to your logo size */
+  width: min(340px, 100%);
   height: auto;
-  display: block;
   margin: 0 auto;
-  filter: brightness(0) invert(1);
 }
 
 .brand-tagline {
   margin: 0 0 10px;
-  letter-spacing: 0.22em;
+  letter-spacing: 3px;
   font-size: 12px;
-  opacity: 0.9;
   color: white;
 }
 
 .brand-stars {
-  letter-spacing: 0.25em;
-  opacity: 0.9;
+  letter-spacing: 5px;
 }
 
 .footer-nav {
@@ -68,14 +66,13 @@
 }
 
 .footer-links a {
-  position: relative;        /* required */
-  display: inline-block;     /* required */
-  padding-bottom: 6px;       /* gives room for the line */
+  position: relative; 
+  display: inline-block;  
+  padding-bottom: 6px;/* gives room for the line */
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
-  letter-spacing: 0.06em;
-  opacity: 0.9;
+  letter-spacing: 1px;
 }
 
 .footer-nav ul li a::after {
@@ -96,29 +93,27 @@
   transform: translateX(-50%) scaleX(1);
 }
 
-
 .footer-signup {
-  justify-self: center;        /* keep it near the middle */
-  width: min(380px, 100%);     /* prevents it from becoming huge */
+  justify-self: center;  
+  width: min(380px, 100%);/* prevents from becoming huge */
 }
 
 .signup-title {
   font-family: 'Ubuntu', sans-serif;
-  margin: 0 0 18px;
+  margin: 0 0 5px;
   font-size: 22px;
-  letter-spacing: 0.12em;
+  letter-spacing: 1px;
 }
 
 .signup-label {
   display: block;
   margin-bottom: 10px;
   font-size: 15px;
-  opacity: 0.9;
 }
 
 .signup-field {
   display: grid;
-  grid-template-columns: 1fr 56px;
+  grid-template-columns: auto 56px;
   align-items: center;
   border: 2px solid rgba(255,255,255,0.55);
   border-radius: 10px;

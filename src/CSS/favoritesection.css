@@ -1,11 +1,12 @@
 /* SECTION WRAPPER */
 .favorites-section {
-  margin: 25px 0 0 0;
+  margin: 0 auto;
   background-color: var(--bg-root); /* dark neutral root background */
   display: flex;
   flex-direction: column;
   align-items: center;             /* centers all content horizontally */
   text-align: center;
+  background: transparent;
 }
 
 /* SECTION HEADING */
@@ -42,7 +43,7 @@
 
 /* INDIVIDUAL CARD */
 .homepagecard-favorites {
-  background-color: var(--bg-surface);
+  background: transparent;
   color: var(--text-primary);
   border-radius: 12px;
   overflow: hidden;
@@ -53,7 +54,17 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
+
+/* Apply the torn shape as a mask to the container */
+  -webkit-mask-image: var(--mask-url);
+  mask-image: var(--mask-url);
+    
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 
   /*
   border-style: solid; /* Required for the border to be visible
@@ -88,7 +99,7 @@
 /* CARD TITLE */
 .favorites-title {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: white;
   text-align: center;
@@ -105,7 +116,6 @@
 
 .homepagecard-favorites:hover .favorites-image{
   transform: scale(1.08);
-  filter: saturate(1.05);
 }
 
 

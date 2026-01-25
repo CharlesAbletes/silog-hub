@@ -3,7 +3,10 @@ import '../../CSS/favoritesection.css'
 function HomePageCardFavorites({ image, title }) {
 
     return (
-        <div className="homepagecard-favorites">
+        <div 
+            className="homepagecard-favorites"
+            style={{ '--mask-url': `url(${image})` }}
+        >
             <img className="favorites-image" src={image} alt={title} />
             <div className="favorites-image-fade"></div>
 

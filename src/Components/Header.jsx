@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import "../CSS/header.css";
 
 function Header() {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
-    const threshold = 140; // increase if you want it to switch later
+    const threshold = 140; 
 
     const onScroll = () => {
       const y = window.scrollY || document.documentElement.scrollTop;
