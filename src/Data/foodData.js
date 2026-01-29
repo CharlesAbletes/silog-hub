@@ -1,60 +1,58 @@
-import { nanoid } from "nanoid"
-
-import tapsilogPic from '../assets/tapsilog.jpg'
-import longsilogPic from '../assets/longsilog.jpg'
-import bisteksilogPic from '../assets/bisteksilog.jpg'
-import cornsilogPic from '../assets/cornsilog.jpg'
-import bangsilogPic from '../assets/bangsilog.jpg'
-import chicksilogPic from '../assets/chicksilog.jpg'
-import bangustinapaPic from '../assets/bangustinapa.jpg'
-import danggitsilogPic from '../assets/danggitsilog.jpg'
+import tapsilog from '../assets/tapsilog.jpg'
+import longsilog from '../assets/longsilog.jpg'
+import bisteksilog from '../assets/bisteksilog.jpg'
+import cornsilog from '../assets/cornsilog.jpg'
+import bangsilog from '../assets/bangsilog.jpg'
+import chicksilog from '../assets/chicksilog.jpg'
+import bangustinapa from '../assets/bangustinapa.jpg'
+import danggitsilog from '../assets/danggitsilog.jpg'
 
     const foodsData = [
         {
-            id: nanoid(),
-            image: tapsilogPic,
+            id: "tapsilog",
+            image: tapsilog,
             title: "Tapsilog",
             text: "Marinated beef, garlic rice, fried egg"
         },
         {
-            id: nanoid(),
-            image: chicksilogPic,
+            id: "chicksilog",
+            image: chicksilog,
             title: "Chicksilog",
             text: "Fried chicken, garlic rice, fried egg"
         },
         {
-            id: nanoid(),
-            image: bisteksilogPic,
+            id: "bisteksilog",
+            image: bisteksilog,
             title: "Bisteksilog",
             text: "Beef steak, garlic rice, fried egg"
         },
         {
-            id: nanoid(),
-            image: cornsilogPic,
+            id: "cornsilog",
+            image: cornsilog,
             title: "Cornsilog",
             text: "Corned beef, garlic rice, fried egg"
         },
         {
-            id: nanoid(),
-            image: bangsilogPic,
+            id: "bangsilog",
+            image: bangsilog,
             title: "Bangsilog",
             text: "Fried milkfish, garlic rice, fried egg"
         },
         {
-            id: nanoid(),
-            image: longsilogPic,
+            id: "longsilog",
+            image: longsilog,
             title: "Longsilog",
             text: "Filipino sausage, garlic rice, fried egg"
         },
         {
-            id: nanoid(),
-            image: bangustinapaPic,
+            id: "bangus-tinapa",
+            image: bangustinapa,
             title: "Bangus Tinapa",
             text: "Smoked milkfish, garlic rice, fried egg"
         },
         {
-            id: nanoid(),
-            image: danggitsilogPic,
+            id: "danggit-silog",
+            image: danggitsilog,
             title: "Danggit Silog",
             text: "Crispy dried fish, garlic rice, fried egg"
         }

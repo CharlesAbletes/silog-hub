@@ -1,10 +1,9 @@
-import { nanoid } from "nanoid"
 import { Link } from "react-router-dom";
 
-import tapsilogPic from '../../assets/tapsilog_torn.png'
-import longsilogPic from '../../assets/longsilog_torn.png'
-import chicksilogPic from '../../assets/chicksilog_torn.png'
-import bangustinapaPic from '../../assets/bangustinapa_torn.png'
+import tapsilog from '../../assets/tapsilog_torn.png'
+import longsilog from '../../assets/longsilog_torn.png'
+import chicksilog from '../../assets/chicksilog_torn.png'
+import bangustinapa from '../../assets/bangustinapa_torn.png'
 import HomePageCardFavorites from '../Cards/HomePage-FavoritesCard.jsx'
 
 import '../../CSS/favoritesection.css'
@@ -14,23 +13,23 @@ function Favorites(){
 
     const foodsData = [
         {
-            id: nanoid(),
-            image: tapsilogPic,
+            id: "tapsilog",
+            image: tapsilog,
             title: "Tapsilog",
         },
         {
-            id: nanoid(),
-            image: chicksilogPic,
+            id: "chicksilog",
+            image: chicksilog,
             title: "Chicksilog",
         },
         {
-            id: nanoid(),
-            image: longsilogPic,
+            id: "longsilog",
+            image: longsilog,
             title: "Longsilog",
         },
         {
-            id: nanoid(),
-            image: bangustinapaPic,
+            id: "bangus-tinapa",
+            image: bangustinapa,
             title: "Bangus Tinapa",
         }
     ];

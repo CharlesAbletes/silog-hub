@@ -1,5 +1,3 @@
-import { nanoid } from "nanoid"
-
 import Silogs from '../../assets/silogs.png'
 import ComboMeals from '../../assets/combo_meals.png'
 import FamilyPacks from '../../assets/family_packs.png'
@@ -11,19 +9,19 @@ function ExploreCategory() {
 
     const exploreMenu = [
             {
-                id: nanoid(),
+                id: "silogs",
                 image: Silogs,
                 title: "Silogs",
                 path: "/silogs"
             },
             {
-                id: nanoid(),
+                id: "combo-meals",
                 image: ComboMeals,
                 title: "Combo Meals",
                 path: "/combo-meals"
             },
             {
-                id: nanoid(),
+                id: "family-packs",
                 image: FamilyPacks,
                 title: "Family Packs",
                 path: "/family-packs"
