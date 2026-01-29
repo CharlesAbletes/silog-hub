@@ -2,7 +2,7 @@
 .hero-banner {
   width: 100%;               /* Full width */
   height: 105vh;              /* Almost full viewport height */
-  background-image: url("../assets/homepage_BG_2_torn.png");
+  background-image: url("../assets/homepage_bg_2_torn.png");
   background-size: cover;    /* Cover entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
